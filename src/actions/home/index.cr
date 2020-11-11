@@ -3,7 +3,7 @@ class Home::Index < BrowserAction
 
   get "/" do
     if current_user?
-      redirect Me::Show
+      redirect Me::Show.with(0)
     else
       # When you're ready change this line to:
       #
@@ -12,7 +12,7 @@ class Home::Index < BrowserAction
       # Or maybe show signed out users a marketing page:
       #
       #   html Marketing::IndexPage
-      html Lucky::WelcomePage
+      redirect SignIns::New
     end
   end
 end

@@ -1,6 +1,6 @@
 # test
 
-This is a project written using [Lucky](https://luckyframework.org). Enjoy!
+Testing some complex link handling that's not working because of https://github.com/luckyframework/lucky/issues/1243
 
 ### Setting up the project
 
